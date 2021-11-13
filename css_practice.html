@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<link rel="stylesheet" href="styling.css">
+</head>
+<body>
+
+    <div id="hero">
+<div class="navbar">
+    <img src="image/wwww.jpg" class="logo">
+    <div class="user">
+        <button type="button">explore</button>
+        <img src="image/user.jpg">
+
+    </div>
+         </div>
+         
+<div class="container">
+    <div class="info">
+        <h1>DISCOVER</h1>
+        <p>The Earth we live in abounds with wonders, mysteries and miracles. Out of these,the most spectacular, spontaneous and splendid is what we call “Nature”.</p>
+
+<input type="text" placeholder="search">
+
+<div class="slider">
+    <img src="image/left-removebg-preview.png" id="prev">
+    <div class="preview">
+        <img src="image/bg2.png.jpg" class="active thumbnail">
+        <img src="image/bg1.png.jpg" class= "thumbnail">
+        <img src="image/bg3.png.jpg"class="thumbnail">
+        <img src="image/bg5.png.jpg" class="thumbnail">
+        <img src="image/bg6.png.png" class="thumbnail">
+
+
+
+    </div>
+    
+    <img src="image/right-removebg-preview (1).png" id="next">
+   
+   
+</div>
+
+    </div>
+
+
+    <script>
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        var thumbnail = document.getElementsByClassName("thumbnail");
+        var hero = document.getElementById("hero");
+
+        var backgroundImg = new Array(
+            "image/bg2.png.jpg",
+            "image/bg1.png.jpg",
+            "image/bg3.png.jpg",
+            "image/bg5.png.jpg",
+            "image/bg6.png.png",
+
+         
+        );
+        let i = 0;
+        next.onclick =function(){
+            if(i < 4){
+                hero.style.backgroundImage = 'url("'+backgroundImg [i+1]+'")';
+            i++;
+
+            
+        }
+
+    </script>
+
+
+
+
+    </script>
+</body>
+</html>
